@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title><%= name %></title>
+  <meta name="author" content="<%= obj.author ? author : '' %>">
+  <meta name="description" content="<%= obj.description ? description : '' %>">
+  <% if (obj.keywords) { %>
+    <meta name="keywords" content="<% keywords.forEach(function(keyword) { %><%= keyword %>, <% }) %>">
+  <% } %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootbass.min.css">
+  <style>
+    .container-fluid { padding-left: 30px; padding-right: 30px; }
+    svg { max-height: 100% }
+  </style>
+</head>
+<body>
+
+<div id="app">
+  <%= app %>
+</div>
+
+
+<script src="js/app.min.js"></script>
+
+</body>
+</html>
